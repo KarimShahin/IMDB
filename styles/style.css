@@ -1,0 +1,224 @@
+:root {
+	font-size: 16px;
+	font-family: "Inter", sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+}
+body {
+	min-height: 100vh;
+}
+a {
+	color: #fefcd7;
+	text-decoration: none;
+	cursor: pointer;
+}
+h1 {
+	font-size: 42px;
+	font-weight: 800;
+}
+h4 {
+	font-size: 14px;
+	font-weight: 700;
+}
+.container {
+	width: 90%;
+	max-width: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+header {
+	background-color: #707070;
+	background-image: url("./../images/andre-tan-THJJRUhNlEc-unsplash.jpg");
+	background-position: center -29vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	max-width: 100%;
+	max-height: 35vh;
+}
+
+header .container {
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+header .container button {
+	position: absolute;
+	top: 1vh;
+	right: 1vh;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+.light-mode {
+	display: none;
+	font-size: 1.125rem;
+	color: #f4e99b;
+}
+.dark-mode {
+	font-size: 1.125rem;
+	color: #fefcd7;
+}
+.dark-bg {
+	background: #121212;
+}
+.dark-color {
+	color: #2e2e2f;
+}
+.mid-dark-color {
+	color: #a5a5a5;
+}
+.flex-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.search-bar {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	max-width: 700px;
+	left: calc(50% - 2.5vh);
+	border-radius: 100vh;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #9ca3af;
+	background-color: #fff;
+	transform: translateY(-50%);
+	transition: width 350ms cubic-bezier(0.3, -0.19, 0.78, 1.29), left 350ms cubic-bezier(0.3, -0.19, 0.78, 1.29);
+}
+
+.search-bar:focus-within {
+	width: 100%;
+	left: 0;
+}
+
+.search-bar:focus-within button:nth-child(1) {
+	border-top-right-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+	cursor: auto;
+}
+
+.search-bar:focus-within button:nth-child(3) {
+	visibility: visible;
+}
+
+.search-bar:focus-within input {
+	visibility: visible;
+}
+
+.search-bar button {
+	color: #374151;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0 12px;
+}
+.search-bar button:nth-child(1) {
+	background-color: transparent;
+	border-radius: 100vh;
+}
+.search-bar button:nth-child(3) {
+	background-color: transparent;
+	border-left: 1px solid #9ca3af;
+	border-top-right-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+	visibility: hidden;
+}
+.search-bar input {
+	border: 0;
+	width: 85%;
+	color: #374151;
+	visibility: hidden;
+}
+
+.movie-list {
+	padding-top: 40px;
+	min-height: 65vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+}
+.movie-list button {
+	color: #b3b3b3;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	display: flex;
+	gap: 0.5em;
+}
+.film-icon {
+	color: #b3b3b3;
+	font-size: 70px;
+}
+.empty-par {
+	text-align: center;
+	color: #b3b3b3;
+}
+.movie {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #2c2c2c;
+}
+.movie:last-child {
+	margin-bottom: 0;
+}
+.movie h1 {
+	font-size: 28px;
+	display: flex;
+	align-items: center;
+	gap: 0.4em;
+}
+.movie h1 span {
+	font-size: 20px;
+	font-weight: 400;
+}
+.movie h1 i {
+	color: yellow;
+}
+.movie h2 {
+	font-size: 16px;
+	font-weight: 600;
+}
+.movie button {
+	color: inherit;
+	font-size: 16px;
+	border: 0;
+	background: transparent;
+	display: flex;
+	gap: 0.4em;
+	cursor: pointer;
+}
+.movie p {
+	font-size: 14px;
+}
+.movie img {
+	aspect-ratio: 99/148;
+	height: 30vh;
+}
+.movie .movie-data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1em;
+}
+.movie-subtitle {
+	display: flex;
+	align-items: center;
+	gap: 0.75em;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>IMDB</title>
+	</head>
+	<body>
+		<header class="hero">
+			<div class="container">
+				<button>
+					<i class="fa-solid fa-sun light-mode"></i>
+					<i class="fa-solid fa-moon dark-mode"></i>
+				</button>
+				<div class="flex-wrapper">
+					<h1 class="main-title"><a href="#">Find your film</a></h1>
+					<h4 class="sub-title"><a href="./watchlist.html">My Watchlist</a></h4>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<section class="search-bar">
+				<button><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+				<input class="search-input" type="text" placeholder="Search for a movie" />
+				<button class="search-btn">Search</button>
+			</section>
+			<section class="movie-list">
+				<i class="fa-solid fa-film film-icon"></i>
+				<p class="empty-par">Start exploring</p>
+			</section>
+		</div>
+		<script src="./scripts/index.js"></script>
+	</body>
+</html>
